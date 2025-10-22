@@ -58,6 +58,22 @@
             border-radius: 6px;
             box-shadow: 0 0 6px rgba(0,0,0,0.1);
         }
+        .image-column {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 25px;
+            margin: 20px 0;
+        }
+
+        .image-column img {
+            width: 90%;          
+            max-width: 900px;    
+            height: auto;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            box-shadow: 0 0 6px rgba(0,0,0,0.1);
+        }
 
         hr {
             margin: 50px 0;
@@ -76,7 +92,7 @@
         <div class="text-block">
             <p>For this section I used ginput from Matplotlib to select my correspondences. It worked pretty well for this task with obvious visual landmarks between the two images. This worked well up until warping in Part 3</p>
         </div>
-        <div class="image-row">
+        <div class="image-column">
             <img src="Images/Homography1.png" alt="Scene 1">
             <img src="Images/Homography2.png" alt="Scene 1 with a sharper angle">
             <img src="Images/Homography3.png" alt="Scene 2">
